@@ -12,20 +12,21 @@ a {
   display: inline-block;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 button {
   cursor: pointer;
   font-family: inherit;
-  padding: 0;
-  border: none;
-  color: inherit;
-  background-color: transparent;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffffff;
-  margin: 0;
 }
 
 h1,
@@ -62,7 +63,8 @@ p {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -181,6 +183,7 @@ p {
   justify-content: flex-start;
   flex-direction: row;
   gap: 10px;
+  border: none;
   border-radius: 4px;
   padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -192,6 +195,18 @@ p {
 }
 
 /* ===== Our advantages ===== */
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-list-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.advantages-item-title {
+  margin-bottom: 8px;
+}
 
 /* ===== Our Team ===== */
 .team {
@@ -204,14 +219,28 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .team-card {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.team-card-content {
+  margin: 32px auto;
 }
 
 .team-item-title {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-item-text {
@@ -225,11 +254,37 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+}
+
+.portfolio-card {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-card-content {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+}
+
+.portfolio-item-title {
+  margin-bottom: 8px;
 }
 
 /* ===== Footer ===== */
 .page-footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 156px;
 }
 
 .logo-footer-part {
@@ -241,4 +296,6 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
+  margin-top: 16px;
 }
