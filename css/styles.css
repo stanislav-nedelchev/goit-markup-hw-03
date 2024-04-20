@@ -161,7 +161,7 @@ p {
 }
 
 .main-title {
-  width: 496px;
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -171,22 +171,20 @@ p {
 }
 
 .order-btn {
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
   border: none;
   border-radius: 4px;
-  padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
 }
 
 .order-btn:hover,
@@ -235,7 +233,7 @@ p {
 }
 
 .team-card-content {
-  margin: 32px auto;
+  margin: 32px 0;
 }
 
 .team-item-title {
@@ -287,6 +285,10 @@ p {
   padding-left: 156px;
 }
 
+.logo-footer {
+  margin-bottom: 16px;
+}
+
 .logo-footer-part {
   color: #f4f4fd;
 }
@@ -297,5 +299,4 @@ p {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
-  margin-top: 16px;
 }
